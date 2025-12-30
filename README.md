@@ -32,7 +32,7 @@ $$R_{i,t} - R_{f,t} = \alpha_i + \beta_i(R_{m,t} - R_{f,t}) + \epsilon_{i,t}$$
 
 ## 📊 Visual Analysis: GOOGL vs SPY (2020-2025)
 
-The script generates a dual-plot visualization comparing the selected stock (e.g., Google) against the benchmark.
+The top plot below shows the performance of GOOGL against SPY over 5 years. The bottom plot shows alpha and beta evaluation for GOOGL compared to the market(SPY in this case).
 
 ![CAPM Analysis Plot](googl.png)
 *Figure 1: Top: Normalized price performance (2020–2025). Bottom: Linear regression of monthly excess returns establishing the stock's Beta.*
