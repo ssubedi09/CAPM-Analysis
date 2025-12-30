@@ -2,6 +2,34 @@
 
 This project implements a **Capital Asset Pricing Model (CAPM)** analysis tool using Python. It fetches historical stock data, calculates key risk metrics (Alpha, Beta, R-Squared) against a market benchmark (S&P 500), and visualizes the performance of specific assets.
 
+## 📐 CAPM & Alpha
+
+### The CAPM Formula
+The Capital Asset Pricing Model describes the relationship between systematic risk and expected return for assets, particularly stocks.
+
+$$E(R_i) = R_f + \beta_i (E(R_m) - R_f)$$
+
+Where:
+* $E(R_i)$: Expected return of the investment.
+* $R_f$: Risk-free rate (typically the yield on government bonds).
+* $\beta_i$: Beta of the investment (measure of volatility relative to the market).
+* $E(R_m) - R_f$: Market Risk Premium.
+
+### Regression & Alpha ($\alpha$)
+In this project, we calculate Beta and Alpha using linear regression on **excess returns** ($R_{excess} = R_{actual} - R_{rf}$).
+
+$$R_{i,t} - R_{f,t} = \alpha_i + \beta_i(R_{m,t} - R_{f,t}) + \epsilon_{i,t}$$
+
+* **Beta ($\beta$):** The slope of the regression line. It represents **Systematic Risk**.
+    * $\beta = 1$: Stock moves in sync with the market.
+    * $\beta > 1$: Stock is more volatile than the market (Aggressive).
+    * $\beta < 1$: Stock is less volatile than the market (Defensive).
+* **Alpha ($\alpha$):** The y-intercept of the regression line. It represents **Idiosyncratic Return**.
+    * Positive $\alpha$ indicates the asset has outperformed the market return predicted by its risk level (Beta).
+
+---
+
+
 ## 📊 Visual Analysis: GOOGL vs SPY (2020-2025)
 
 The script generates a dual-plot visualization comparing the selected stock (e.g., Google) against the benchmark.
@@ -30,32 +58,7 @@ Below are the calculated CAPM metrics for top market-cap stocks based on the 5-y
 
 ---
 
-## 📐 The Math: CAPM & Alpha
 
-### The CAPM Formula
-The Capital Asset Pricing Model describes the relationship between systematic risk and expected return for assets, particularly stocks.
-
-$$E(R_i) = R_f + \beta_i (E(R_m) - R_f)$$
-
-Where:
-* $E(R_i)$: Expected return of the investment.
-* $R_f$: Risk-free rate (typically the yield on government bonds).
-* $\beta_i$: Beta of the investment (measure of volatility relative to the market).
-* $E(R_m) - R_f$: Market Risk Premium.
-
-### Regression & Alpha ($\alpha$)
-In this project, we calculate Beta and Alpha using linear regression on **excess returns** ($R_{excess} = R_{actual} - R_{rf}$).
-
-$$R_{i,t} - R_{f,t} = \alpha_i + \beta_i(R_{m,t} - R_{f,t}) + \epsilon_{i,t}$$
-
-* **Beta ($\beta$):** The slope of the regression line. It represents **Systematic Risk**.
-    * $\beta = 1$: Stock moves in sync with the market.
-    * $\beta > 1$: Stock is more volatile than the market (Aggressive).
-    * $\beta < 1$: Stock is less volatile than the market (Defensive).
-* **Alpha ($\alpha$):** The y-intercept of the regression line. It represents **Idiosyncratic Return**.
-    * Positive $\alpha$ indicates the asset has outperformed the market return predicted by its risk level (Beta).
-
----
 
 ## 🚀 Use Cases
 
