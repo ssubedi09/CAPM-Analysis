@@ -60,10 +60,10 @@ Below are the calculated CAPM metrics for top market-cap stocks based on the 5-y
 
 
 
-## 🚀 Use Cases
+## 🚀 How can we use this Model?
 
 ### 1. Valuation (Discounted Cash Flow)
-Analysts use the CAPM output to determine the **Cost of Equity ($k_e$)**, which is a critical input for Discounted Cash Flow (DCF) models to value a company.
+The CAPM output can be used to determine the **Cost of Equity ($k_e$)**, which is a critical input for Discounted Cash Flow (DCF) models to value a company.
 
 **How it works:**
 To find the fair value of a stock price today ($P_0$), we sum the present value of its future cash flows ($CF$). The CAPM rate is used as the discount rate $r$ in the denominator.
