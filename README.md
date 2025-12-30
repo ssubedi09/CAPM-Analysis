@@ -60,7 +60,7 @@ Below are the calculated CAPM metrics for top market-cap stocks based on the 5-y
 
 
 
-## 🚀 How can we use this Model?
+## 🚀 Use Cases
 
 ### 1. Valuation (Discounted Cash Flow)
 The CAPM output can be used to determine the **Cost of Equity ($k_e$)**, which is a critical input for Discounted Cash Flow (DCF) models to value a company.
@@ -80,7 +80,7 @@ $$k_e = 4.0\% + 1.08 (10.0\% - 4.0\%) = 10.48\%$$
 Investors should discount Google's future cash flows at **10.48%**. A higher Beta results in a higher discount rate, lowering the present value of the stock (higher risk requires higher reward).
 
 ### 2. Portfolio Optimization
-Portfolio managers use Beta to construct portfolios that match a specific risk tolerance. The Beta of a portfolio ($\beta_p$) is simply the weighted average of the individual asset Betas.
+Beta can be used to construct portfolios that match a specific risk tolerance. The Beta of a portfolio ($\beta_p$) is simply the weighted average of the individual asset Betas.
 
 **How it works:**
 $$\beta_p = \sum_{i=1}^{n} w_i \beta_i$$
