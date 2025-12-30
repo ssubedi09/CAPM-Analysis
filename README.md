@@ -41,7 +41,7 @@ The top plot below shows the performance of GOOGL against SPY over 5 years. The 
 
 ## 🧮 Results
 
-Below are the calculated CAPM metrics for top market-cap stocks based on the 5-year monthly analysis provided by the script.
+Below are the calculated CAPM metrics for top market-cap stocks based on the 5-year monthly analysi..
 
 | Stock | Ticker | Beta ($\beta$) | Annualized Alpha ($\alpha$) | $R^2$ | Interpretation |
 | :--- | :--- | :--- | :--- | :--- | :--- |
