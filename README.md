@@ -102,4 +102,16 @@ Despite holding a low-volatility stock (LLY), the heavy weight in NVDA makes thi
 
 ## ⚙️ Installation & Usage
 
+### Prerequisites
+* Python 3.7+
+* pip
+
+### Libraries Used
+```txt
+numpy
+pandas
+scikit-learn
+yfinance
+matplotlib
+
 
