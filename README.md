@@ -88,7 +88,7 @@ $$\beta_p = \sum_{i=1}^{n} w_i \beta_i$$
 Where $w_i$ is the weight (percentage) of the stock in the portfolio.
 
 **Application:**
-If a manager wants a "Market Neutral" portfolio (Beta = 0) or a "Defensive" portfolio (Beta = 0.8) during a recession, they adjust weights mathematically.
+If you want a "Market Neutral" portfolio (Beta = 0) or a "Defensive" portfolio (Beta = 0.8) during a recession, you can adjust weights mathematically. It becomes an optimization problem.
 
 **Example:**
 You have a portfolio with 50% **NVDA** ($\beta=2.30$) and 50% **LLY** ($\beta=0.34$).
@@ -96,21 +96,10 @@ You have a portfolio with 50% **NVDA** ($\beta=2.30$) and 50% **LLY** ($\beta=0.
 $$\beta_p = (0.5 \times 2.30) + (0.5 \times 0.34)$$
 $$\beta_p = 1.15 + 0.17 = 1.32$$
 
-Despite holding a low-volatility stock (LLY), the heavy weight in NVDA makes this portfolio **32% more volatile** than the S&P 500. To reduce risk, the manager would mathematically solve for new weights to lower $\beta_p$ to 1.0 or lower.
+Despite holding a low-volatility stock (LLY), the heavy weight in NVDA makes this portfolio **32% more volatile** than the S&P 500. To reduce risk, you can derive new weights to lower $\beta_p$ to 1.0 or lower.
 
 ---
 
 ## ⚙️ Installation & Usage
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/yourusername/capm-analysis.git](https://github.com/yourusername/capm-analysis.git)
-    ```
-2.  **Install dependencies:**
-    ```bash
-    pip install pandas yfinance scipy matplotlib
-    ```
-3.  **Run the script:**
-    ```bash
-    python capm_script.py
-    ```
+
